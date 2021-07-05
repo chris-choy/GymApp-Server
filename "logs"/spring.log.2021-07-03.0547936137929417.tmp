@@ -1,0 +1,569 @@
+2021-07-03 10:59:19.545  INFO 35099 --- [main] com.chris.gym.GymApplication             : Starting GymApplication using Java 11.0.10 on ChrisdeAir.T-mobile.com with PID 35099 (/Users/chris/OneDrive/IdeaProjects/gym/target/classes started by chris in /Users/chris/OneDrive/IdeaProjects/gym)
+2021-07-03 10:59:19.558  INFO 35099 --- [main] com.chris.gym.GymApplication             : No active profile set, falling back to default profiles: default
+2021-07-03 10:59:21.291  INFO 35099 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@25f61c2c' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 10:59:21.315  INFO 35099 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 10:59:21.626  INFO 35099 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-03 10:59:21.634  INFO 35099 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-03 10:59:21.634  INFO 35099 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-07-03 10:59:21.706  INFO 35099 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-03 10:59:21.708  INFO 35099 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2065 ms
+2021-07-03 10:59:22.043  INFO 35099 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-07-03 10:59:22.210  INFO 35099 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-07-03 10:59:22.922  INFO 35099 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v2/api-docs'] with []
+2021-07-03 10:59:22.923  INFO 35099 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v3/api-docs'] with []
+2021-07-03 10:59:22.923  INFO 35099 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/ui'] with []
+2021-07-03 10:59:22.923  INFO 35099 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-07-03 10:59:22.923  INFO 35099 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/security'] with []
+2021-07-03 10:59:22.923  INFO 35099 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-ui.html'] with []
+2021-07-03 10:59:22.923  INFO 35099 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**'] with []
+2021-07-03 10:59:22.959  INFO 35099 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@40a8a26f, org.springframework.security.web.context.SecurityContextPersistenceFilter@4aac81ca, org.springframework.security.web.header.HeaderWriterFilter@51b51641, org.springframework.security.web.authentication.logout.LogoutFilter@79d49790, org.springframework.web.filter.CorsFilter@5b02a984, com.chris.gym.jwt.JWTFilter@269308cc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63326a3a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4df0d9f8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@177ddd24, org.springframework.security.web.session.SessionManagementFilter@55d1f065, org.springframework.security.web.access.ExceptionTranslationFilter@56266bda, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@478530cb]
+2021-07-03 10:59:23.112  INFO 35099 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-03 10:59:23.355  INFO 35099 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-03 10:59:23.652  WARN 35099 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: , dataTypeClass: class java.lang.Void
+2021-07-03 10:59:23.694  INFO 35099 --- [main] com.chris.gym.GymApplication             : Started GymApplication in 4.922 seconds (JVM running for 6.12)
+2021-07-03 10:59:46.637  INFO 35099 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-03 10:59:46.644  INFO 35099 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-07-03 10:59:46.647  INFO 35099 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-07-03 10:59:51.900  INFO 35115 --- [main] com.chris.gym.GymApplication             : Starting GymApplication using Java 11.0.10 on ChrisdeAir.T-mobile.com with PID 35115 (/Users/chris/OneDrive/IdeaProjects/gym/target/classes started by chris in /Users/chris/OneDrive/IdeaProjects/gym)
+2021-07-03 10:59:51.914  INFO 35115 --- [main] com.chris.gym.GymApplication             : No active profile set, falling back to default profiles: default
+2021-07-03 10:59:53.561  INFO 35115 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@609319c3' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 10:59:53.568  INFO 35115 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 10:59:53.876  INFO 35115 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-03 10:59:53.958  INFO 35115 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1913 ms
+2021-07-03 10:59:54.326  INFO 35115 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-07-03 10:59:54.542  INFO 35115 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-07-03 10:59:55.297  INFO 35115 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v2/api-docs'] with []
+2021-07-03 10:59:55.297  INFO 35115 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v3/api-docs'] with []
+2021-07-03 10:59:55.298  INFO 35115 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/ui'] with []
+2021-07-03 10:59:55.298  INFO 35115 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-07-03 10:59:55.298  INFO 35115 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/security'] with []
+2021-07-03 10:59:55.298  INFO 35115 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-ui.html'] with []
+2021-07-03 10:59:55.298  INFO 35115 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**'] with []
+2021-07-03 10:59:55.338  INFO 35115 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c346c45, org.springframework.security.web.context.SecurityContextPersistenceFilter@9f1ca74, org.springframework.security.web.header.HeaderWriterFilter@4e2109fe, org.springframework.security.web.authentication.logout.LogoutFilter@191e654, org.springframework.web.filter.CorsFilter@1118d539, com.chris.gym.jwt.JWTFilter@16df9bde, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@365e65bb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e72fb04, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@478530cb, org.springframework.security.web.session.SessionManagementFilter@687b0ddc, org.springframework.security.web.access.ExceptionTranslationFilter@78bad03b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7b598d05]
+2021-07-03 10:59:55.480  INFO 35115 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-03 10:59:55.716  INFO 35115 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-03 10:59:56.047  WARN 35115 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: , dataTypeClass: class java.lang.Void
+2021-07-03 10:59:56.098  INFO 35115 --- [main] com.chris.gym.GymApplication             : Started GymApplication in 4.884 seconds (JVM running for 5.752)
+2021-07-03 10:59:57.399  INFO 35115 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-03 10:59:57.408  INFO 35115 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-07-03 10:59:57.411  INFO 35115 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-07-03 11:00:01.334  INFO 35120 --- [main] com.chris.gym.GymApplication             : Starting GymApplication using Java 11.0.10 on ChrisdeAir.T-mobile.com with PID 35120 (/Users/chris/OneDrive/IdeaProjects/gym/target/classes started by chris in /Users/chris/OneDrive/IdeaProjects/gym)
+2021-07-03 11:00:01.338  INFO 35120 --- [main] com.chris.gym.GymApplication             : No active profile set, falling back to default profiles: default
+2021-07-03 11:00:02.900  INFO 35120 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@36776c32' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 11:00:02.909  INFO 35120 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 11:00:03.157  INFO 35120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-03 11:00:03.164  INFO 35120 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-03 11:00:03.164  INFO 35120 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-07-03 11:00:03.327  INFO 35120 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-03 11:00:03.328  INFO 35120 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1918 ms
+2021-07-03 11:00:03.567  INFO 35120 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-07-03 11:00:03.774  INFO 35120 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-07-03 11:00:04.662  INFO 35120 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v2/api-docs'] with []
+2021-07-03 11:00:04.663  INFO 35120 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v3/api-docs'] with []
+2021-07-03 11:00:04.663  INFO 35120 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/ui'] with []
+2021-07-03 11:00:04.663  INFO 35120 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-07-03 11:00:04.663  INFO 35120 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/security'] with []
+2021-07-03 11:00:04.663  INFO 35120 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-ui.html'] with []
+2021-07-03 11:00:04.664  INFO 35120 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**'] with []
+2021-07-03 11:00:04.709  INFO 35120 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@120411ec, org.springframework.security.web.context.SecurityContextPersistenceFilter@5aa7cfdf, org.springframework.security.web.header.HeaderWriterFilter@5be7b749, org.springframework.security.web.authentication.logout.LogoutFilter@6df2a206, org.springframework.web.filter.CorsFilter@5c8d58ed, com.chris.gym.jwt.JWTFilter@6cc8adff, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ecdf528, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d626f2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b2e9db2, org.springframework.security.web.session.SessionManagementFilter@615bad16, org.springframework.security.web.access.ExceptionTranslationFilter@16df9bde, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1e5aacd9]
+2021-07-03 11:00:04.879  INFO 35120 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-03 11:00:05.162  INFO 35120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-03 11:00:05.604  WARN 35120 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: , dataTypeClass: class java.lang.Void
+2021-07-03 11:00:05.663  INFO 35120 --- [main] com.chris.gym.GymApplication             : Started GymApplication in 4.958 seconds (JVM running for 6.192)
+2021-07-03 11:01:37.407  INFO 35120 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-03 11:01:37.410  INFO 35120 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-03 11:01:37.417  INFO 35120 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2021-07-03 11:01:37.556 ERROR 35120 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class com.chris.gym.Plan.Entity.Plan]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.chris.gym.Plan.Entity.Plan` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 2, column: 3]] with root cause
+
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.chris.gym.Plan.Entity.Plan` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 2, column: 3]
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67) ~[jackson-databind-2.11.4.jar:2.11.4]
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1615) ~[jackson-databind-2.11.4.jar:2.11.4]
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:400) ~[jackson-databind-2.11.4.jar:2.11.4]
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1077) ~[jackson-databind-2.11.4.jar:2.11.4]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1332) ~[jackson-databind-2.11.4.jar:2.11.4]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:331) ~[jackson-databind-2.11.4.jar:2.11.4]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:164) ~[jackson-databind-2.11.4.jar:2.11.4]
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4526) ~[jackson-databind-2.11.4.jar:2.11.4]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3521) ~[jackson-databind-2.11.4.jar:2.11.4]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:378) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:342) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:186) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:158) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:131) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:170) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.44.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.44.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at com.chris.gym.jwt.JWTFilter.doFilter(JWTFilter.java:48) ~[classes/:na]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2021-07-03 11:18:44.764  INFO 35120 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-03 11:18:44.770  INFO 35120 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-07-03 11:18:44.775  INFO 35120 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-07-03 11:30:33.150  INFO 35728 --- [main] com.chris.gym.GymApplication             : Starting GymApplication using Java 11.0.10 on ChrisdeAir.T-mobile.com with PID 35728 (/Users/chris/OneDrive/IdeaProjects/gym/target/classes started by chris in /Users/chris/OneDrive/IdeaProjects/gym)
+2021-07-03 11:30:33.167  INFO 35728 --- [main] com.chris.gym.GymApplication             : No active profile set, falling back to default profiles: default
+2021-07-03 11:30:34.706  INFO 35728 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@413bef78' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 11:30:34.712  INFO 35728 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 11:30:34.930  INFO 35728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-03 11:30:34.937  INFO 35728 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-03 11:30:34.937  INFO 35728 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-07-03 11:30:35.045  INFO 35728 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-03 11:30:35.045  INFO 35728 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1750 ms
+2021-07-03 11:30:35.280  INFO 35728 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-07-03 11:30:35.421  INFO 35728 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-07-03 11:30:35.994  INFO 35728 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v2/api-docs'] with []
+2021-07-03 11:30:35.994  INFO 35728 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v3/api-docs'] with []
+2021-07-03 11:30:35.994  INFO 35728 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/ui'] with []
+2021-07-03 11:30:35.994  INFO 35728 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-07-03 11:30:35.994  INFO 35728 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/security'] with []
+2021-07-03 11:30:35.994  INFO 35728 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-ui.html'] with []
+2021-07-03 11:30:35.995  INFO 35728 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**'] with []
+2021-07-03 11:30:36.028  INFO 35728 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76db9048, org.springframework.security.web.context.SecurityContextPersistenceFilter@350567f1, org.springframework.security.web.header.HeaderWriterFilter@3e04abc5, org.springframework.security.web.authentication.logout.LogoutFilter@22e813fc, org.springframework.web.filter.CorsFilter@67acfde9, com.chris.gym.jwt.JWTFilter@54daf8f9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26f75d9c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@191e654, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d4d65f5, org.springframework.security.web.session.SessionManagementFilter@627bcd7e, org.springframework.security.web.access.ExceptionTranslationFilter@393ae7a0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ecdf528]
+2021-07-03 11:30:36.159  INFO 35728 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-03 11:30:36.347  INFO 35728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-03 11:30:36.494  INFO 35728 --- [main] com.chris.gym.GymApplication             : Started GymApplication in 4.001 seconds (JVM running for 4.847)
+2021-07-03 11:30:40.272  INFO 35728 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-03 11:30:40.274  INFO 35728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-03 11:30:40.277  INFO 35728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-07-03 11:30:40.320  WARN 35728 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type '*/*;charset=UTF-8' not supported]
+2021-07-03 11:31:18.423  WARN 35728 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type '*/*;charset=UTF-8' not supported]
+2021-07-03 11:31:24.261  INFO 35728 --- [http-nio-8080-exec-5] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: The HTTP header line [{: ] does not conform to RFC 7230 and has been ignored.
+	at org.apache.coyote.http11.Http11InputBuffer.skipLine(Http11InputBuffer.java:1045) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.coyote.http11.Http11InputBuffer.parseHeader(Http11InputBuffer.java:897) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.coyote.http11.Http11InputBuffer.parseHeaders(Http11InputBuffer.java:593) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:284) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2021-07-03 11:39:46.357  INFO 35728 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-03 11:39:46.362  INFO 35728 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-07-03 11:39:46.365  INFO 35728 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-07-03 11:39:52.017  INFO 35841 --- [main] com.chris.gym.GymApplication             : Starting GymApplication using Java 11.0.10 on ChrisdeAir.T-mobile.com with PID 35841 (/Users/chris/OneDrive/IdeaProjects/gym/target/classes started by chris in /Users/chris/OneDrive/IdeaProjects/gym)
+2021-07-03 11:39:52.020  INFO 35841 --- [main] com.chris.gym.GymApplication             : No active profile set, falling back to default profiles: default
+2021-07-03 11:39:53.511  INFO 35841 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@716185fe' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 11:39:53.518  INFO 35841 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 11:39:53.769  INFO 35841 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-03 11:39:53.776  INFO 35841 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-03 11:39:53.777  INFO 35841 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-07-03 11:39:53.842  INFO 35841 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-03 11:39:53.842  INFO 35841 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1767 ms
+2021-07-03 11:39:54.154  INFO 35841 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-07-03 11:39:54.302  INFO 35841 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-07-03 11:39:54.944  INFO 35841 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v2/api-docs'] with []
+2021-07-03 11:39:54.945  INFO 35841 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v3/api-docs'] with []
+2021-07-03 11:39:54.945  INFO 35841 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/ui'] with []
+2021-07-03 11:39:54.945  INFO 35841 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-07-03 11:39:54.945  INFO 35841 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/security'] with []
+2021-07-03 11:39:54.945  INFO 35841 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-ui.html'] with []
+2021-07-03 11:39:54.945  INFO 35841 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**'] with []
+2021-07-03 11:39:54.992  INFO 35841 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@371cd2fc, org.springframework.security.web.context.SecurityContextPersistenceFilter@687b0ddc, org.springframework.security.web.header.HeaderWriterFilter@78bad03b, org.springframework.security.web.authentication.logout.LogoutFilter@2d4e99de, org.springframework.web.filter.CorsFilter@634f58d2, com.chris.gym.jwt.JWTFilter@b32e983, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9f1ca74, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1008df1e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c346c45, org.springframework.security.web.session.SessionManagementFilter@61554b6b, org.springframework.security.web.access.ExceptionTranslationFilter@20890a1a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5501d1c8]
+2021-07-03 11:39:55.185  INFO 35841 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-03 11:39:55.416  INFO 35841 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-03 11:39:55.563  INFO 35841 --- [main] com.chris.gym.GymApplication             : Started GymApplication in 4.141 seconds (JVM running for 5.389)
+2021-07-03 11:40:01.091  INFO 35841 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-03 11:40:01.093  INFO 35841 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-03 11:40:01.095  INFO 35841 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-07-03 11:43:00.283  INFO 35841 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-03 11:43:00.290  INFO 35841 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-07-03 11:43:00.292  INFO 35841 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-07-03 11:43:05.656  INFO 35901 --- [main] com.chris.gym.GymApplication             : Starting GymApplication using Java 11.0.10 on ChrisdeAir.T-mobile.com with PID 35901 (/Users/chris/OneDrive/IdeaProjects/gym/target/classes started by chris in /Users/chris/OneDrive/IdeaProjects/gym)
+2021-07-03 11:43:05.659  INFO 35901 --- [main] com.chris.gym.GymApplication             : No active profile set, falling back to default profiles: default
+2021-07-03 11:43:06.993  INFO 35901 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@fd09e43' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 11:43:07.000  INFO 35901 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 11:43:07.234  INFO 35901 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-03 11:43:07.242  INFO 35901 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-03 11:43:07.242  INFO 35901 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-07-03 11:43:07.352  INFO 35901 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-03 11:43:07.353  INFO 35901 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1640 ms
+2021-07-03 11:43:07.603  INFO 35901 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-07-03 11:43:07.743  INFO 35901 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-07-03 11:43:08.333  INFO 35901 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v2/api-docs'] with []
+2021-07-03 11:43:08.334  INFO 35901 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v3/api-docs'] with []
+2021-07-03 11:43:08.334  INFO 35901 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/ui'] with []
+2021-07-03 11:43:08.334  INFO 35901 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-07-03 11:43:08.334  INFO 35901 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/security'] with []
+2021-07-03 11:43:08.334  INFO 35901 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-ui.html'] with []
+2021-07-03 11:43:08.334  INFO 35901 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**'] with []
+2021-07-03 11:43:08.368  INFO 35901 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6cc8c13c, org.springframework.security.web.context.SecurityContextPersistenceFilter@761f234c, org.springframework.security.web.header.HeaderWriterFilter@70a24f9, org.springframework.security.web.authentication.logout.LogoutFilter@f76872f, org.springframework.web.filter.CorsFilter@281b2dfd, com.chris.gym.jwt.JWTFilter@371cd2fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@42b4df5a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e04abc5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b32e983, org.springframework.security.web.session.SessionManagementFilter@ff4b223, org.springframework.security.web.access.ExceptionTranslationFilter@29b8df5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@646e6d07]
+2021-07-03 11:43:08.501  INFO 35901 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-03 11:43:08.686  INFO 35901 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-03 11:43:08.840  INFO 35901 --- [main] com.chris.gym.GymApplication             : Started GymApplication in 3.723 seconds (JVM running for 4.571)
+2021-07-03 11:43:10.031  INFO 35901 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-03 11:43:10.033  INFO 35901 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-03 11:43:10.035  INFO 35901 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-07-03 11:44:22.809  INFO 35901 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-03 11:44:22.813  INFO 35901 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-07-03 11:44:22.817  INFO 35901 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-07-03 11:44:27.327  INFO 35921 --- [main] com.chris.gym.GymApplication             : Starting GymApplication using Java 11.0.10 on ChrisdeAir.T-mobile.com with PID 35921 (/Users/chris/OneDrive/IdeaProjects/gym/target/classes started by chris in /Users/chris/OneDrive/IdeaProjects/gym)
+2021-07-03 11:44:27.374  INFO 35921 --- [main] com.chris.gym.GymApplication             : No active profile set, falling back to default profiles: default
+2021-07-03 11:44:28.819  INFO 35921 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2a7d9b41' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 11:44:28.825  INFO 35921 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 11:44:29.058  INFO 35921 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-03 11:44:29.066  INFO 35921 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-03 11:44:29.066  INFO 35921 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-07-03 11:44:29.121  INFO 35921 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-03 11:44:29.122  INFO 35921 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1662 ms
+2021-07-03 11:44:29.414  INFO 35921 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-07-03 11:44:29.540  INFO 35921 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-07-03 11:44:30.043  WARN 35921 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'inMemorySwaggerResourcesProvider' defined in URL [jar:file:/Users/chris/.m2/repository/io/springfox/springfox-swagger-common/3.0.0/springfox-swagger-common-3.0.0.jar!/springfox/documentation/swagger/web/InMemorySwaggerResourcesProvider.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.swagger.web.InMemorySwaggerResourcesProvider]: Constructor threw exception; nested exception is java.lang.IllegalStateException: Multiple Dockets with the same group name are not supported. The following duplicate groups were discovered. default
+2021-07-03 11:44:30.045  INFO 35921 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-07-03 11:44:30.048  INFO 35921 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-07-03 11:44:30.052  INFO 35921 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-07-03 11:44:30.068  INFO 35921 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-03 11:44:30.085 ERROR 35921 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'inMemorySwaggerResourcesProvider' defined in URL [jar:file:/Users/chris/.m2/repository/io/springfox/springfox-swagger-common/3.0.0/springfox-swagger-common-3.0.0.jar!/springfox/documentation/swagger/web/InMemorySwaggerResourcesProvider.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.swagger.web.InMemorySwaggerResourcesProvider]: Constructor threw exception; nested exception is java.lang.IllegalStateException: Multiple Dockets with the same group name are not supported. The following duplicate groups were discovered. default
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:296) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) ~[spring-boot-2.4.5.jar:2.4.5]
+	at com.chris.gym.GymApplication.main(GymApplication.java:14) ~[classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.swagger.web.InMemorySwaggerResourcesProvider]: Constructor threw exception; nested exception is java.lang.IllegalStateException: Multiple Dockets with the same group name are not supported. The following duplicate groups were discovered. default
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:311) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 20 common frames omitted
+Caused by: java.lang.IllegalStateException: Multiple Dockets with the same group name are not supported. The following duplicate groups were discovered. default
+	at springfox.documentation.spring.web.plugins.DuplicateGroupsDetector.ensureNoDuplicateGroups(DuplicateGroupsDetector.java:49) ~[springfox-spring-web-3.0.0.jar:3.0.0]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsManager.documentationPlugins(DocumentationPluginsManager.java:106) ~[springfox-spring-web-3.0.0.jar:3.0.0]
+	at springfox.documentation.swagger.web.InMemorySwaggerResourcesProvider.<init>(InMemorySwaggerResourcesProvider.java:62) ~[springfox-swagger-common-3.0.0.jar:3.0.0]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 22 common frames omitted
+
+2021-07-03 11:46:35.791  INFO 35957 --- [main] com.chris.gym.GymApplication             : Starting GymApplication using Java 11.0.10 on ChrisdeAir.T-mobile.com with PID 35957 (/Users/chris/OneDrive/IdeaProjects/gym/target/classes started by chris in /Users/chris/OneDrive/IdeaProjects/gym)
+2021-07-03 11:46:35.796  INFO 35957 --- [main] com.chris.gym.GymApplication             : No active profile set, falling back to default profiles: default
+2021-07-03 11:46:37.216  INFO 35957 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@66383c29' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 11:46:37.221  INFO 35957 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 11:46:37.416  INFO 35957 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-03 11:46:37.424  INFO 35957 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-03 11:46:37.424  INFO 35957 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-07-03 11:46:37.529  INFO 35957 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-03 11:46:37.530  INFO 35957 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1670 ms
+2021-07-03 11:46:37.784  INFO 35957 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-07-03 11:46:37.919  INFO 35957 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-07-03 11:46:38.463  WARN 35957 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'inMemorySwaggerResourcesProvider' defined in URL [jar:file:/Users/chris/.m2/repository/io/springfox/springfox-swagger-common/3.0.0/springfox-swagger-common-3.0.0.jar!/springfox/documentation/swagger/web/InMemorySwaggerResourcesProvider.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.swagger.web.InMemorySwaggerResourcesProvider]: Constructor threw exception; nested exception is java.lang.IllegalStateException: Multiple Dockets with the same group name are not supported. The following duplicate groups were discovered. default
+2021-07-03 11:46:38.466  INFO 35957 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-07-03 11:46:38.468  INFO 35957 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-07-03 11:46:38.473  INFO 35957 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-07-03 11:46:38.491  INFO 35957 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-03 11:46:38.507 ERROR 35957 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'inMemorySwaggerResourcesProvider' defined in URL [jar:file:/Users/chris/.m2/repository/io/springfox/springfox-swagger-common/3.0.0/springfox-swagger-common-3.0.0.jar!/springfox/documentation/swagger/web/InMemorySwaggerResourcesProvider.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.swagger.web.InMemorySwaggerResourcesProvider]: Constructor threw exception; nested exception is java.lang.IllegalStateException: Multiple Dockets with the same group name are not supported. The following duplicate groups were discovered. default
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:296) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) ~[spring-boot-2.4.5.jar:2.4.5]
+	at com.chris.gym.GymApplication.main(GymApplication.java:14) ~[classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.swagger.web.InMemorySwaggerResourcesProvider]: Constructor threw exception; nested exception is java.lang.IllegalStateException: Multiple Dockets with the same group name are not supported. The following duplicate groups were discovered. default
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:311) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 20 common frames omitted
+Caused by: java.lang.IllegalStateException: Multiple Dockets with the same group name are not supported. The following duplicate groups were discovered. default
+	at springfox.documentation.spring.web.plugins.DuplicateGroupsDetector.ensureNoDuplicateGroups(DuplicateGroupsDetector.java:49) ~[springfox-spring-web-3.0.0.jar:3.0.0]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsManager.documentationPlugins(DocumentationPluginsManager.java:106) ~[springfox-spring-web-3.0.0.jar:3.0.0]
+	at springfox.documentation.swagger.web.InMemorySwaggerResourcesProvider.<init>(InMemorySwaggerResourcesProvider.java:62) ~[springfox-swagger-common-3.0.0.jar:3.0.0]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 22 common frames omitted
+
+2021-07-03 11:47:02.331  INFO 35966 --- [main] com.chris.gym.GymApplication             : Starting GymApplication using Java 11.0.10 on ChrisdeAir.T-mobile.com with PID 35966 (/Users/chris/OneDrive/IdeaProjects/gym/target/classes started by chris in /Users/chris/OneDrive/IdeaProjects/gym)
+2021-07-03 11:47:02.337  INFO 35966 --- [main] com.chris.gym.GymApplication             : No active profile set, falling back to default profiles: default
+2021-07-03 11:47:03.715  INFO 35966 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5d152bcd' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 11:47:03.721  INFO 35966 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 11:47:03.905  INFO 35966 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-03 11:47:03.912  INFO 35966 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-03 11:47:03.912  INFO 35966 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-07-03 11:47:04.013  INFO 35966 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-03 11:47:04.014  INFO 35966 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1608 ms
+2021-07-03 11:47:04.240  INFO 35966 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-07-03 11:47:04.365  INFO 35966 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-07-03 11:47:04.942  INFO 35966 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v2/api-docs'] with []
+2021-07-03 11:47:04.942  INFO 35966 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v3/api-docs'] with []
+2021-07-03 11:47:04.942  INFO 35966 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/ui'] with []
+2021-07-03 11:47:04.942  INFO 35966 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-07-03 11:47:04.942  INFO 35966 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/security'] with []
+2021-07-03 11:47:04.942  INFO 35966 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-ui.html'] with []
+2021-07-03 11:47:04.943  INFO 35966 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**'] with []
+2021-07-03 11:47:04.976  INFO 35966 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5aa7cfdf, org.springframework.security.web.context.SecurityContextPersistenceFilter@35e75f7a, org.springframework.security.web.header.HeaderWriterFilter@52f43225, org.springframework.security.web.authentication.logout.LogoutFilter@402a69f, org.springframework.web.filter.CorsFilter@75882261, com.chris.gym.jwt.JWTFilter@1242d96b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@269c7104, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34b2d51a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ecdf528, org.springframework.security.web.session.SessionManagementFilter@21f91efa, org.springframework.security.web.access.ExceptionTranslationFilter@67b8d45, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@61ad30f6]
+2021-07-03 11:47:05.114  INFO 35966 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-03 11:47:05.312  INFO 35966 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-03 11:47:05.632  INFO 35966 --- [main] com.chris.gym.GymApplication             : Started GymApplication in 3.885 seconds (JVM running for 4.625)
+2021-07-03 11:47:13.473  INFO 35966 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-03 11:47:13.476  INFO 35966 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-03 11:47:13.479  INFO 35966 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-07-03 15:38:11.427  INFO 35966 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-03 15:38:11.433  INFO 35966 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-07-03 15:38:11.436  INFO 35966 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-07-03 15:38:16.867  INFO 36670 --- [main] com.chris.gym.GymApplication             : Starting GymApplication using Java 11.0.10 on ChrisdeAir.T-mobile.com with PID 36670 (/Users/chris/OneDrive/IdeaProjects/gym/target/classes started by chris in /Users/chris/OneDrive/IdeaProjects/gym)
+2021-07-03 15:38:16.869  INFO 36670 --- [main] com.chris.gym.GymApplication             : No active profile set, falling back to default profiles: default
+2021-07-03 15:38:18.182  INFO 36670 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2a7d9b41' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 15:38:18.187  INFO 36670 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 15:38:18.456  INFO 36670 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-03 15:38:18.463  INFO 36670 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-03 15:38:18.463  INFO 36670 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-07-03 15:38:18.516  INFO 36670 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-03 15:38:18.516  INFO 36670 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1584 ms
+2021-07-03 15:38:18.740  INFO 36670 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-07-03 15:38:18.890  INFO 36670 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-07-03 15:38:19.499  INFO 36670 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v2/api-docs'] with []
+2021-07-03 15:38:19.499  INFO 36670 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v3/api-docs'] with []
+2021-07-03 15:38:19.499  INFO 36670 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/ui'] with []
+2021-07-03 15:38:19.499  INFO 36670 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-07-03 15:38:19.500  INFO 36670 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/security'] with []
+2021-07-03 15:38:19.500  INFO 36670 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-ui.html'] with []
+2021-07-03 15:38:19.500  INFO 36670 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**'] with []
+2021-07-03 15:38:19.538  INFO 36670 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b32e983, org.springframework.security.web.context.SecurityContextPersistenceFilter@42b4df5a, org.springframework.security.web.header.HeaderWriterFilter@26101efc, org.springframework.security.web.authentication.logout.LogoutFilter@580ffea, org.springframework.web.filter.CorsFilter@601d6622, com.chris.gym.jwt.JWTFilter@3c346c45, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@67b8d45, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ee12d58, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16df9bde, org.springframework.security.web.session.SessionManagementFilter@761f234c, org.springframework.security.web.access.ExceptionTranslationFilter@70a24f9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@652b3733]
+2021-07-03 15:38:19.685  INFO 36670 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-03 15:38:19.883  INFO 36670 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-03 15:38:20.191  INFO 36670 --- [main] com.chris.gym.GymApplication             : Started GymApplication in 4.174 seconds (JVM running for 5.249)
+2021-07-03 15:38:35.132  INFO 36670 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-03 15:38:35.133  INFO 36670 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-03 15:38:35.136  INFO 36670 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-07-03 15:48:06.857  INFO 36670 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-03 15:48:06.861  INFO 36670 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-07-03 15:48:06.864  INFO 36670 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-07-03 15:48:11.340  INFO 36807 --- [main] com.chris.gym.GymApplication             : Starting GymApplication using Java 11.0.10 on ChrisdeAir.T-mobile.com with PID 36807 (/Users/chris/OneDrive/IdeaProjects/gym/target/classes started by chris in /Users/chris/OneDrive/IdeaProjects/gym)
+2021-07-03 15:48:11.343  INFO 36807 --- [main] com.chris.gym.GymApplication             : No active profile set, falling back to default profiles: default
+2021-07-03 15:48:12.737  INFO 36807 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7ebe2e47' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 15:48:12.744  INFO 36807 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 15:48:12.940  INFO 36807 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-03 15:48:12.947  INFO 36807 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-03 15:48:12.947  INFO 36807 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-07-03 15:48:13.003  INFO 36807 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-03 15:48:13.003  INFO 36807 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1617 ms
+2021-07-03 15:48:13.277  INFO 36807 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-07-03 15:48:13.407  INFO 36807 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-07-03 15:48:13.962  INFO 36807 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v2/api-docs'] with []
+2021-07-03 15:48:13.963  INFO 36807 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v3/api-docs'] with []
+2021-07-03 15:48:13.963  INFO 36807 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/ui'] with []
+2021-07-03 15:48:13.963  INFO 36807 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-07-03 15:48:13.963  INFO 36807 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/security'] with []
+2021-07-03 15:48:13.963  INFO 36807 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-ui.html'] with []
+2021-07-03 15:48:13.963  INFO 36807 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**'] with []
+2021-07-03 15:48:13.996  INFO 36807 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ec5cc14, org.springframework.security.web.context.SecurityContextPersistenceFilter@f9a5e3f, org.springframework.security.web.header.HeaderWriterFilter@18bb1b88, org.springframework.security.web.authentication.logout.LogoutFilter@7f2ca6f8, org.springframework.web.filter.CorsFilter@1cd2143b, com.chris.gym.jwt.JWTFilter@40a8a26f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@393ae7a0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21f91efa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@269308cc, org.springframework.security.web.session.SessionManagementFilter@52f43225, org.springframework.security.web.access.ExceptionTranslationFilter@100eeedc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@16df9bde]
+2021-07-03 15:48:14.133  INFO 36807 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-03 15:48:14.360  INFO 36807 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-03 15:48:14.634  INFO 36807 --- [main] com.chris.gym.GymApplication             : Started GymApplication in 3.876 seconds (JVM running for 4.652)
+2021-07-03 15:48:18.620  INFO 36807 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-03 15:48:18.622  INFO 36807 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-03 15:48:18.626  INFO 36807 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-07-03 15:51:43.790  INFO 36807 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-03 15:51:43.796  INFO 36807 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-07-03 15:51:43.800  INFO 36807 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-07-03 15:51:48.474  INFO 36864 --- [main] com.chris.gym.GymApplication             : Starting GymApplication using Java 11.0.10 on ChrisdeAir.T-mobile.com with PID 36864 (/Users/chris/OneDrive/IdeaProjects/gym/target/classes started by chris in /Users/chris/OneDrive/IdeaProjects/gym)
+2021-07-03 15:51:48.478  INFO 36864 --- [main] com.chris.gym.GymApplication             : No active profile set, falling back to default profiles: default
+2021-07-03 15:51:49.866  INFO 36864 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6bbab114' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 15:51:49.872  INFO 36864 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 15:51:50.070  INFO 36864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-03 15:51:50.078  INFO 36864 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-03 15:51:50.078  INFO 36864 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-07-03 15:51:50.189  INFO 36864 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-03 15:51:50.190  INFO 36864 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1651 ms
+2021-07-03 15:51:50.426  INFO 36864 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-07-03 15:51:50.558  INFO 36864 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-07-03 15:51:51.130  INFO 36864 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v2/api-docs'] with []
+2021-07-03 15:51:51.130  INFO 36864 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v3/api-docs'] with []
+2021-07-03 15:51:51.130  INFO 36864 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/ui'] with []
+2021-07-03 15:51:51.130  INFO 36864 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-07-03 15:51:51.130  INFO 36864 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/security'] with []
+2021-07-03 15:51:51.130  INFO 36864 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-ui.html'] with []
+2021-07-03 15:51:51.130  INFO 36864 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**'] with []
+2021-07-03 15:51:51.165  INFO 36864 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b32e983, org.springframework.security.web.context.SecurityContextPersistenceFilter@42b4df5a, org.springframework.security.web.header.HeaderWriterFilter@26101efc, org.springframework.security.web.authentication.logout.LogoutFilter@580ffea, org.springframework.web.filter.CorsFilter@601d6622, com.chris.gym.jwt.JWTFilter@3c346c45, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@67b8d45, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ee12d58, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16df9bde, org.springframework.security.web.session.SessionManagementFilter@761f234c, org.springframework.security.web.access.ExceptionTranslationFilter@70a24f9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@652b3733]
+2021-07-03 15:51:51.309  INFO 36864 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-03 15:51:51.513  INFO 36864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-03 15:51:51.780  INFO 36864 --- [main] com.chris.gym.GymApplication             : Started GymApplication in 3.894 seconds (JVM running for 4.683)
+2021-07-03 15:54:06.461  INFO 36864 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-03 15:54:06.468  INFO 36864 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-07-03 15:54:06.471  INFO 36864 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-07-03 15:54:11.074  INFO 36899 --- [main] com.chris.gym.GymApplication             : Starting GymApplication using Java 11.0.10 on ChrisdeAir.T-mobile.com with PID 36899 (/Users/chris/OneDrive/IdeaProjects/gym/target/classes started by chris in /Users/chris/OneDrive/IdeaProjects/gym)
+2021-07-03 15:54:11.076  INFO 36899 --- [main] com.chris.gym.GymApplication             : No active profile set, falling back to default profiles: default
+2021-07-03 15:54:12.499  INFO 36899 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6bbab114' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 15:54:12.506  INFO 36899 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 15:54:12.710  INFO 36899 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-03 15:54:12.721  INFO 36899 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-03 15:54:12.721  INFO 36899 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-07-03 15:54:12.781  INFO 36899 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-03 15:54:12.782  INFO 36899 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1647 ms
+2021-07-03 15:54:13.081  INFO 36899 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-07-03 15:54:13.226  INFO 36899 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-07-03 15:54:13.799  INFO 36899 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v2/api-docs'] with []
+2021-07-03 15:54:13.800  INFO 36899 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v3/api-docs'] with []
+2021-07-03 15:54:13.800  INFO 36899 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/ui'] with []
+2021-07-03 15:54:13.800  INFO 36899 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-07-03 15:54:13.800  INFO 36899 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/security'] with []
+2021-07-03 15:54:13.800  INFO 36899 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-ui.html'] with []
+2021-07-03 15:54:13.800  INFO 36899 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**'] with []
+2021-07-03 15:54:13.835  INFO 36899 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16df9bde, org.springframework.security.web.context.SecurityContextPersistenceFilter@67b8d45, org.springframework.security.web.header.HeaderWriterFilter@18dac12f, org.springframework.security.web.authentication.logout.LogoutFilter@3a6556b6, org.springframework.web.filter.CorsFilter@601d6622, com.chris.gym.jwt.JWTFilter@478530cb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52f43225, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1533338c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5be7b749, org.springframework.security.web.session.SessionManagementFilter@42b4df5a, org.springframework.security.web.access.ExceptionTranslationFilter@26101efc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6cc8c13c]
+2021-07-03 15:54:13.970  INFO 36899 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-03 15:54:14.175  INFO 36899 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-03 15:54:14.418  INFO 36899 --- [main] com.chris.gym.GymApplication             : Started GymApplication in 3.938 seconds (JVM running for 4.731)
+2021-07-03 15:54:27.311  INFO 36899 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-03 15:54:27.314  INFO 36899 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-03 15:54:27.317  INFO 36899 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-07-03 16:21:23.237  INFO 36899 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-03 16:21:23.247  INFO 36899 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-07-03 16:21:23.252  INFO 36899 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-07-03 16:21:28.498  INFO 37289 --- [main] com.chris.gym.GymApplication             : Starting GymApplication using Java 11.0.10 on ChrisdeAir.T-mobile.com with PID 37289 (/Users/chris/OneDrive/IdeaProjects/gym/target/classes started by chris in /Users/chris/OneDrive/IdeaProjects/gym)
+2021-07-03 16:21:28.501  INFO 37289 --- [main] com.chris.gym.GymApplication             : No active profile set, falling back to default profiles: default
+2021-07-03 16:21:29.865  INFO 37289 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2a7d9b41' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 16:21:29.870  INFO 37289 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-03 16:21:30.078  INFO 37289 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-03 16:21:30.085  INFO 37289 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-03 16:21:30.085  INFO 37289 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-07-03 16:21:30.142  INFO 37289 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-03 16:21:30.142  INFO 37289 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1586 ms
+2021-07-03 16:21:30.427  INFO 37289 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-07-03 16:21:30.563  INFO 37289 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-07-03 16:21:31.153  INFO 37289 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v2/api-docs'] with []
+2021-07-03 16:21:31.153  INFO 37289 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v3/api-docs'] with []
+2021-07-03 16:21:31.153  INFO 37289 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/ui'] with []
+2021-07-03 16:21:31.153  INFO 37289 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-07-03 16:21:31.154  INFO 37289 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/security'] with []
+2021-07-03 16:21:31.154  INFO 37289 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-ui.html'] with []
+2021-07-03 16:21:31.154  INFO 37289 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**'] with []
+2021-07-03 16:21:31.187  INFO 37289 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16df9bde, org.springframework.security.web.context.SecurityContextPersistenceFilter@67b8d45, org.springframework.security.web.header.HeaderWriterFilter@18dac12f, org.springframework.security.web.authentication.logout.LogoutFilter@3a6556b6, org.springframework.web.filter.CorsFilter@601d6622, com.chris.gym.jwt.JWTFilter@478530cb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52f43225, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1533338c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5be7b749, org.springframework.security.web.session.SessionManagementFilter@42b4df5a, org.springframework.security.web.access.ExceptionTranslationFilter@26101efc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6cc8c13c]
+2021-07-03 16:21:31.327  INFO 37289 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-03 16:21:31.534  INFO 37289 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-03 16:21:31.818  INFO 37289 --- [main] com.chris.gym.GymApplication             : Started GymApplication in 3.911 seconds (JVM running for 5.155)
+2021-07-03 16:21:45.842  INFO 37289 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-03 16:21:45.843  INFO 37289 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-03 16:21:45.845  INFO 37289 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
