@@ -2,6 +2,7 @@ package com.chris.gym.Plan.Entity;
 
 import com.alibaba.fastjson.annotation.JSONField;
 import com.chris.gym.Sport.Sport;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.sql.Timestamp;
 import java.util.ArrayList;
@@ -14,11 +15,15 @@ public class PlanSection implements Comparable<PlanSection> {
         rowList = new ArrayList<PlanRow>();
         seq = planSQLModel.seq;
         plan_id = planSQLModel.plan_id;
+        last_changed = planSQLModel.last_changed;
         // missing sport.
         // missing rowList.
     }
 
-//    public PlanSection(int id, int seq, int plan_id, Sport sport, List<PlanRow> rowList) {
+    public PlanSection() {
+    }
+
+    //    public PlanSection(int id, int seq, int plan_id, Sport sport, List<PlanRow> rowList) {
 //        this.id = id;
 //        this.seq = seq;
 //        this.plan_id = plan_id;
@@ -47,18 +52,18 @@ public class PlanSection implements Comparable<PlanSection> {
 //        this.last_changed = last_changed;
 //    }
 
-    @JSONField(name = "id")
+    @JsonProperty("id")
     int id;
-    @JSONField(name = "seq")
+    @JsonProperty("seq")
     int seq;
-    @JSONField(name = "plan_id")
+    @JsonProperty("plan_id")
     int plan_id;
-    @JSONField(name = "sport")
+    @JsonProperty("sport")
     Sport sport;
-    @JSONField(name = "rowList")
+    @JsonProperty("rowList")
     List<PlanRow> rowList;
 
-    @JSONField(name = "last_changed")
+    @JsonProperty("last_changed")
     Timestamp last_changed;
 
     public int getId() {

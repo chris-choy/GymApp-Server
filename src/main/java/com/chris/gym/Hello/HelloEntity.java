@@ -33,6 +33,51 @@ public class HelloEntity {
     Timestamp last_changed;
 
 
+    public int getId() {
+        return id;
+    }
 
+    public void setId(int id) {
+        this.id = id;
+    }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getSeq() {
+        return seq;
+    }
+
+    public void setSeq(int seq) {
+        this.seq = seq;
+    }
+
+    public int getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(int user_id) {
+        this.user_id = user_id;
+    }
+
+    public List<HelloSection> getSectionList() {
+        return sectionList;
+    }
+
+    public void setSectionList(List<HelloSection> sectionList) {
+        this.sectionList = sectionList;
+    }
+
+    public Timestamp getLast_changed() {
+        return last_changed;
+    }
+
+    public void setLast_changed(Timestamp last_changed) {
+        this.last_changed = last_changed;
+    }
 }

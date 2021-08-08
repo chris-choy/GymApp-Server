@@ -29,15 +29,15 @@ public class PlanDao {
 
 
 
-    public ResponseEntity<String> updatePlan(User user,Plan requestPlan){
-
+    public Plan updatePlan(User user,Plan requestPlan){
         // 更新Plan的信息。
-        // 检查Plan是否存在，存在则update，不存在则insert。
+
+        // 1. 检查Plan是否存在，存在则update，不存在则insert。
         Plan responsePlan = null;
 
-        // id等于0，则是新的Plan，直接创建就好。
+        // 1.1 id不等于0，则数据库中可能存在。
         if (requestPlan.getId() != 0){
-            // 先尝试获取服务器上的Plan内容。
+            // 1.1.1 先尝试获取服务器上的Plan内容。
             try {
 
                 // 因为从数据库获取的数据不是按照Plan-PlanSection-PlanRow结构分层，
@@ -49,12 +49,13 @@ public class PlanDao {
                 }
             } catch (Exception e){
                 System.out.println("Error: 检查Plan是否存在中," + e + "." );
-                return new ResponseEntity<String>("Error", HttpStatus.INTERNAL_SERVER_ERROR);
+                return null;
+//                return new ResponseEntity<String>("Error", HttpStatus.INTERNAL_SERVER_ERROR);
             }
         }
 
         if( responsePlan == null ){
-            // 创建plan。
+            // 1.2 创建plan。
             try {
                 planMapper.insertPlan(requestPlan.getName(),user.getId(), requestPlan.getSeq());
                 responsePlan = planMapper.findPlanWithUserIdAndSeq(user.getId(), requestPlan.getSeq());
@@ -63,7 +64,7 @@ public class PlanDao {
             }
 
         } else {
-            // 更新plan。
+            // 1.2 更新plan。
             if(responsePlan.getName().contentEquals(requestPlan.getName()) == false){
                 // 需要修改的plan和数据库中的plan名称不一致。
                 // 故update修改，否则不作任何改动。
@@ -75,18 +76,18 @@ public class PlanDao {
             }
         }
 
-        // 下一步骤，对PlanSection和PlanRow进行检查修改。
-        // 如果数据库已存在这个Plan的某个Section，则直接修改参数。
+        // 2. 下一步骤，对PlanSection和PlanRow进行检查修改。
+        //      如果数据库已存在这个Plan的某个Section，则直接修改参数。
         for(int i = 0; i<requestPlan.getSectionList().size(); i++){
             if ( i < responsePlan.getSectionList().size()){
-                // 如果数据库已存在这个Plan的某个Section，
-                // 则直接传入对应的Section修改参数。
+                // 2.1 如果数据库已存在这个Plan的某个Section，
+                //       则直接传入对应的Section修改参数。
                 updateSection(
                         responsePlan,
                         responsePlan.getSectionList().get(i),
                         requestPlan.getSectionList().get(i));
             } else {
-                // 如果不存在，直接传入null，自动创建。
+                // 2.2 如果不存在，直接传入null，自动创建。
                 updateSection(
                         responsePlan,
                         null,
@@ -95,7 +96,7 @@ public class PlanDao {
 
         }
 
-        // 删除多余的section。
+        // 3. 删除多余的section。
         int difference = responsePlan.getSectionList().size() - requestPlan.getSectionList().size();
         if(difference > 0){
             // 从后往前删除。
@@ -112,7 +113,7 @@ public class PlanDao {
             }
         }
 
-        return ResponseEntity.ok("");
+        return responsePlan;
     }
 
     private void updateSection(Plan plan, PlanSection currentSection , PlanSection requestSection){
@@ -174,6 +175,7 @@ public class PlanDao {
                 try {
                     planMapper.deletePlanRow(responseSection.getRowList().get(i).getId());
                 } catch (Exception e) {
+
                     System.out.println(e);
                 }
             }
@@ -182,6 +184,7 @@ public class PlanDao {
     }
 
     private void updateRow(PlanSection responseSection, PlanRow currentRow, PlanRow requestRow){
+
         // 查看数据库中是否存在。
         PlanRow responseRow = currentRow;
 
@@ -195,10 +198,12 @@ public class PlanDao {
                         responseSection.getId(),
                         requestRow.getSeq(),
                         requestRow.getValue(),
-                        requestRow.getTimes());
+                        requestRow.getTimes(),
+                        requestRow.getRestTime());
 
                 responseRow = planMapper.findPlanRow(responseSection.getId(), requestRow.getSeq());
             } catch (Exception e){
+                // 应该要输出错误过去客户端。
                 System.out.println(e);
             }
 
@@ -208,11 +213,17 @@ public class PlanDao {
 
             if ((responseRow.getValue().compareTo(requestRow.getValue()) != 0)
                     ||
-                    (responseRow.getTimes() != requestRow.getTimes())){
+                    (responseRow.getTimes() != requestRow.getTimes())
+                    ||
+                    (responseRow.getRestTime() != requestRow.getRestTime())
+            ){
                 // 不相等，则更新value数值和次数times。
-
                 try {
-                    planMapper.updatePlanRow(responseRow.getId(), requestRow.getValue(), requestRow.getTimes());
+                    planMapper.updatePlanRow(
+                            responseRow.getId(),
+                            requestRow.getValue(),
+                            requestRow.getTimes(),
+                            requestRow.getRestTime());
                 } catch (Exception e){
                     System.out.println(e);
                 }
@@ -265,5 +276,30 @@ public class PlanDao {
         return plan;
     }
 
+    public Plan getCompletePlan(int id){
+        List<PlanSQLModel> sqlModels = planMapper.findPlanByPlanId(id);
+        Plan result = parseToPlan(sqlModels);
+        return result;
+    }
+
+    public List<Plan> getAllPlansComplete(int user_id){
+
+//        List<Plan> plans = planMapper.findAllPlanWithUserId(user_id);
+
+        List<Integer> id_list = planMapper.findAllPlanId(user_id);
+
+        List<Plan> completePlans = new ArrayList<Plan>();
+
+        for (int plan_id:
+                id_list) {
+            List<PlanSQLModel> planSQLModels =  planMapper.findPlanByPlanId(plan_id);
+
+            Plan planModel = parseToPlan(planSQLModels);
+            completePlans.add(planModel);
+        }
+
+        return completePlans;
+
+    }
 
 }

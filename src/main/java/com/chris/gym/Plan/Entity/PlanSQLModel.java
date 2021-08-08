@@ -1,7 +1,5 @@
 package com.chris.gym.Plan.Entity;
 
-import java.sql.Date;
-import java.sql.Time;
 import java.sql.Timestamp;
 
 public class PlanSQLModel {
@@ -78,6 +76,34 @@ public class PlanSQLModel {
     int sport_id;
     double value;
     int times;
+
+    public int getTimes() {
+        return times;
+    }
+
+    public void setTimes(int times) {
+        this.times = times;
+    }
+
+    public int getRestTime() {
+        return restTime;
+    }
+
+    public void setRestTime(int restTime) {
+        this.restTime = restTime;
+    }
+
+    public int getLastValue() {
+        return lastValue;
+    }
+
+    public void setLastValue(int lastValue) {
+        this.lastValue = lastValue;
+    }
+
+    int restTime;
+    int lastValue;
+
     Timestamp last_changed;
 
     public Timestamp getLast_changed() {

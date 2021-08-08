@@ -25,7 +25,8 @@ public class Swagger3Config {
 //                .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
                 .apis(RequestHandlerSelectors.basePackage("com.chris.gym.controller"))
                 .paths(PathSelectors.any())
-                .build();
+                .build()
+                .directModelSubstitute(Timestamp.class, long.class);
     }
 
     private ApiInfo apiInfo() {

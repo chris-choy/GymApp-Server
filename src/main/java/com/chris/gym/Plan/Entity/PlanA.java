@@ -4,9 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.sql.Timestamp;
 
-public class PlanRow {
+public class PlanA {
 
-    public PlanRow(PlanSQLModel planSQLModel){
+    public PlanA(PlanSQLModel planSQLModel){
         id = planSQLModel.id;
         plan_id = planSQLModel.plan_id;
         plan_section_id = planSQLModel.plan_section_id;
@@ -21,7 +21,7 @@ public class PlanRow {
         // missing rowList.
     }
 
-    public PlanRow(int id, int plan_id, int plan_section_id, int seq, Double value, int times, int lastValue, int restTime) {
+    public PlanA(int id, int plan_id, int plan_section_id, int seq, Double value, int times, int lastValue, int restTime) {
         this.id = id;
         this.plan_id = plan_id;
         this.plan_section_id = plan_section_id;
@@ -32,8 +32,9 @@ public class PlanRow {
         this.restTime = restTime;
     }
 
-    public PlanRow() {
-    }
+//    public PlanA(){}
+
+
 
     @JsonProperty("id")
     int id;
@@ -52,8 +53,17 @@ public class PlanRow {
     int restTime;
     @JsonProperty("lastValue")
     int lastValue;
+
     @JsonProperty("last_changed")
     Timestamp last_changed;
+
+    public Timestamp getLast_changed() {
+        return last_changed;
+    }
+
+    public void setLast_changed(Timestamp last_changed) {
+        this.last_changed = last_changed;
+    }
 
     public int getRestTime() {
         return restTime;
@@ -71,13 +81,7 @@ public class PlanRow {
         this.lastValue = lastValue;
     }
 
-    public Timestamp getLast_changed() {
-        return last_changed;
-    }
 
-    public void setLast_changed(Timestamp last_changed) {
-        this.last_changed = last_changed;
-    }
 
     public int getTimes() {
         return times;

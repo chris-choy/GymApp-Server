@@ -49,11 +49,12 @@ public interface PlanMapper {
                                          @Param("sport_id") int sport_id);
 
 
-    @Update("update t_plan set value = #{value}, times=#{times} where " +
+    @Update("update t_plan set value = #{value}, times=#{times}, restTime=#{restTime} where " +
             "id = #{id}")
     public void updatePlanRow(@Param("id") int id,
                               @Param("value") double value,
-                              @Param("times") int times);
+                              @Param("times") int times,
+                              @Param("restTime") int restTime);
 
 
 //    public long updatePlanRow(@Param("id") int id);
@@ -64,13 +65,14 @@ public interface PlanMapper {
                                   @Param("seq") int seq,
                                   @Param("sport_id") int sport_id);
 
-    @Insert("INSERT INTO t_plan( user_id, plan_id ,plan_section_id, seq, value, times ) VALUES(#{user_id}, #{plan_id}, #{plan_section_id}, #{seq}, #{value}, #{times})")
+    @Insert("INSERT INTO t_plan( user_id, plan_id ,plan_section_id, seq, value, times, restTime ) VALUES(#{user_id}, #{plan_id}, #{plan_section_id}, #{seq}, #{value}, #{times}, #{restTime})")
     public long insertPlanRow(@Param("user_id") int user_id,
                               @Param("plan_id") int plan_id,
                               @Param("plan_section_id") int plan_section_id,
                               @Param("seq") int seq,
                               @Param("value") double value,
-                              @Param("times") int times);
+                              @Param("times") int times,
+                              @Param("restTime") int restTime);
 
     /*
     *  返回最近插入的id。

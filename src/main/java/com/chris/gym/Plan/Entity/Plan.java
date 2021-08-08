@@ -1,5 +1,8 @@
 package com.chris.gym.Plan.Entity;
 import com.alibaba.fastjson.annotation.JSONField;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonEnumDefaultValue;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.sql.Timestamp;
 import java.util.List;
@@ -10,15 +13,15 @@ import java.util.List;
 
 public class Plan {
 
-    @JSONField(name = "id")
+    @JsonProperty("id")
     private int id;
 
-    @JSONField(name = "name")
+    @JsonProperty("name")
     private String name;
 
 
     // sequence.
-    @JSONField(name = "seq")
+    @JsonProperty("seq")
     private int seq;
 
     public int getSeq() {
@@ -31,12 +34,12 @@ public class Plan {
 
 
     // id.
-    @JSONField(name = "user_id")
+    @JsonProperty("user_id")
     private int user_id;
 
 
     // SectionList.
-    @JSONField(name = "sectionList")
+    @JsonProperty("sectionList")
     List<PlanSection> sectionList;
     public List<PlanSection> getSectionList() {
         return sectionList;
@@ -44,7 +47,7 @@ public class Plan {
 
 
 
-    @JSONField(name = "last_changed")
+    @JsonProperty("last_changed")
     Timestamp last_changed;
 
     public Timestamp getLast_changed() {
@@ -116,6 +119,23 @@ public class Plan {
         this.last_changed = last_changed;
     }
 
+
+//    @JsonCreator
+//    public Plan(@JsonProperty("id") int id,
+//                @JsonProperty("name") String name,
+//                @JsonProperty("seq") int seq,
+//                @JsonProperty("user_id") int user_id,
+//                @JsonProperty("sectionList") List<PlanSection> sectionList,
+//                @JsonProperty("last_changed") Timestamp last_changed) {
+//        this.id = id;
+//        this.name = name;
+//        this.seq = seq;
+//        this.user_id = user_id;
+//        this.sectionList = sectionList;
+//        this.last_changed = last_changed;
+//    }
+
+
     public Plan(int id, String name, int seq, int user_id, List<PlanSection> sectionList, Timestamp last_changed) {
         this.id = id;
         this.name = name;
@@ -124,6 +144,14 @@ public class Plan {
         this.sectionList = sectionList;
         this.last_changed = last_changed;
     }
+
+    public Plan() {
+    }
+
+    //    public Plan(){};
+
+
+
 
 
 

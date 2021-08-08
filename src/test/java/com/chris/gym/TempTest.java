@@ -315,7 +315,8 @@ public class TempTest {
                         responseSection.getId(),
                         requestRow.getSeq(),
                         requestRow.getValue(),
-                        requestRow.getTimes());
+                        requestRow.getTimes(),
+                        requestRow.getRestTime());
 
                 responseRow = planMapper.findPlanRow(responseSection.getId(), requestRow.getSeq());
             } catch (Exception e){
@@ -332,7 +333,11 @@ public class TempTest {
                 // 不相等，则更新value数值和次数times。
 
                 try {
-                    planMapper.updatePlanRow(responseRow.getId(), requestRow.getValue(), requestRow.getTimes());
+                    planMapper.updatePlanRow(
+                            responseRow.getId(),
+                            requestRow.getValue(),
+                            requestRow.getTimes(),
+                            requestRow.getRestTime());
                 } catch (Exception e){
                     System.out.println(e);
                 }

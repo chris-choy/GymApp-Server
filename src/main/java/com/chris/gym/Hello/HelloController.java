@@ -23,8 +23,7 @@ public class HelloController {
 
     @ApiOperation(value = "更新hello")
     @PostMapping("/update")
-    public HelloEntity update(@RequestBody HelloEntity plan){
-
+    public ResponseEntity<HelloEntity> update(@RequestBody HelloEntity plan){
 
         ObjectMapper objectMapper = new ObjectMapper();
 
@@ -36,8 +35,15 @@ public class HelloController {
             System.out.println(e);
         }
 
-        return plan;
 
+
+//        if(plan.getName().contentEquals("nullname")){
+//            return
+//        }
+
+
+
+        return new ResponseEntity<>(plan,HttpStatus.OK);
 
 
 

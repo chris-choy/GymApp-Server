@@ -1,4 +1,4 @@
-package com.chris.gym.Plan;
+package com.chris.gym.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
@@ -11,6 +11,8 @@ import com.chris.gym.Plan.Mapper.PlanMapper;
 import com.chris.gym.Sport.SportMapper;
 import com.chris.gym.User.User;
 import com.chris.gym.User.UserMapper;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -58,7 +60,6 @@ public class PlanRestController {
 
         if (authentication == null) {
 //            LOG.debug("no authentication in security context found");
-//            return "no authentication in security context found.";
             return null;
         } else {
             // 获取username
@@ -71,6 +72,7 @@ public class PlanRestController {
             }
             // 获取user
             User user = userMapper.findByUsername(username);
+
 
             return user;
 
@@ -225,7 +227,21 @@ public class PlanRestController {
         }
     }
 
-//    public Plan a
+
+
+    @ApiOperation("更新完整Plan")
+    @ApiImplicitParam(name="Authorization", value = "JWT认证Token", required = true)
+    @PostMapping("/update")
+    public ResponseEntity<Plan> updatePlan(@RequestBody Plan requestPlan){
+
+        // 获取user。
+        User user = getUser();
+
+        Plan responsePlan = planDao.updatePlan(user, requestPlan);
+
+        return new ResponseEntity<>(responsePlan, HttpStatus.OK);
+
+    }
 
 
 
@@ -277,36 +293,39 @@ public class PlanRestController {
     }
 
     @GetMapping("/complete")
-    public ResponseEntity<String> getCompletePlans(){
+    public ResponseEntity<List<Plan>> getCompletePlans(){
         User user = getUser();
 
-        if (user != null ){
-            List<Plan> plans = planMapper.findAllPlanWithUserId(user.getId());
-
-            List<Integer> id_list = planMapper.findAllPlanId(user.getId());
-//            List<int> id_list =
-
-            List<Plan> completePlans = new ArrayList<Plan>();
-
-            for (int plan_id:
-                 id_list) {
-                List<PlanSQLModel> planSQLModels =  planMapper.findPlanByPlanId(plan_id);
-
-                Plan planModel = parseToPlan(planSQLModels);
-                completePlans.add(planModel);
-            }
-
-//            Timestamp time = completePlans.get(0).getLast_changed();
-//            Date date = Date.from(time.toInstant());
-////            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yy-mm-dd hh-mm-ss");
-//            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-////            System.out.println(String.format("date:" + sdf.format(date)));
-
-            return new ResponseEntity<String>(JSON.toJSONString(completePlans), HttpStatus.OK);
-
+        List<Plan> plans = planDao.getAllPlansComplete(user.getId());
+        if (plans != null) {
+            return new ResponseEntity<>(plans, HttpStatus.OK);
         } else {
-            return new ResponseEntity<String>("No user.", HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(null, HttpStatus.NO_CONTENT);
         }
+
+
+//        if (user != null ){
+//            List<Plan> plans = planMapper.findAllPlanWithUserId(user.getId());
+//
+//            List<Integer> id_list = planMapper.findAllPlanId(user.getId());
+////            List<int> id_list =
+//
+//            List<Plan> completePlans = new ArrayList<Plan>();
+//
+//            for (int plan_id:
+//                 id_list) {
+//                List<PlanSQLModel> planSQLModels =  planMapper.findPlanByPlanId(plan_id);
+//
+//                Plan planModel = parseToPlan(planSQLModels);
+//                completePlans.add(planModel);
+//            }
+//
+////            return new ResponseEntity<String>(JSON.toJSONString(completePlans), HttpStatus.OK);
+//            return new ResponseEntity<>(completePlans,HttpStatus.OK);
+//        } else {
+////            return new ResponseEntity<String>("No user.", HttpStatus.BAD_REQUEST);
+//            return new ResponseEntity<>(null, HttpStatus.OK);
+//        }
 
     }
 
@@ -381,42 +400,42 @@ public class PlanRestController {
     }
 
     // PlanRow 操作
-    @GetMapping("/plan/row/create")
-    public ResponseEntity<String> createRow(@RequestBody String body){
-
-        // 获取用户信息。
-        User user = getUser();
-        if(user == null){
-            return new ResponseEntity<String>("Missing user details.", HttpStatus.BAD_REQUEST);
-        }
-
-        // 获取创建Section参数。
-        JSONObject bodyJsonObject = JSONObject.parseObject(body);
-
-        int seq = 0;
-        int plan_section_id = 0;
-        double value = 0;
-        int plan_id = 0;
-        int times = 0;
-        try {
-            seq = bodyJsonObject.getInteger("seq");
-            plan_section_id = bodyJsonObject.getInteger("plan_section_id");
-            value = bodyJsonObject.getDoubleValue("value");
-            plan_id = bodyJsonObject.getInteger("plan_id");
-            times = bodyJsonObject.getInteger("times");
-        } catch (Exception e){
-            return new ResponseEntity<String>(" missing xxx.",HttpStatus.BAD_REQUEST);
-        }
-
-        try {
-            planMapper.insertPlanRow(user.getId(), plan_id, plan_section_id, seq, value, times);
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-            return new ResponseEntity<String>("Missing sport details.", HttpStatus.BAD_REQUEST);
-        }
-
-        return new ResponseEntity<String>("OK", HttpStatus.OK);
-    }
+//    @GetMapping("/plan/row/create")
+//    public ResponseEntity<String> createRow(@RequestBody String body){
+//
+//        // 获取用户信息。
+//        User user = getUser();
+//        if(user == null){
+//            return new ResponseEntity<String>("Missing user details.", HttpStatus.BAD_REQUEST);
+//        }
+//
+//        // 获取创建Section参数。
+//        JSONObject bodyJsonObject = JSONObject.parseObject(body);
+//
+//        int seq = 0;
+//        int plan_section_id = 0;
+//        double value = 0;
+//        int plan_id = 0;
+//        int times = 0;
+//        try {
+//            seq = bodyJsonObject.getInteger("seq");
+//            plan_section_id = bodyJsonObject.getInteger("plan_section_id");
+//            value = bodyJsonObject.getDoubleValue("value");
+//            plan_id = bodyJsonObject.getInteger("plan_id");
+//            times = bodyJsonObject.getInteger("times");
+//        } catch (Exception e){
+//            return new ResponseEntity<String>(" missing xxx.",HttpStatus.BAD_REQUEST);
+//        }
+//
+//        try {
+//            planMapper.insertPlanRow(user.getId(), plan_id, plan_section_id, seq, value, times);
+//        } catch (Exception e) {
+//            System.out.println(e.getMessage());
+//            return new ResponseEntity<String>("Missing sport details.", HttpStatus.BAD_REQUEST);
+//        }
+//
+//        return new ResponseEntity<String>("OK", HttpStatus.OK);
+//    }
 
 
 

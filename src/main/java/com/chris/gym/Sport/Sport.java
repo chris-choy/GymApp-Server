@@ -2,6 +2,8 @@ package com.chris.gym.Sport;
 
 import com.alibaba.fastjson.annotation.JSONField;
 
+import java.sql.Timestamp;
+
 public class Sport {
 
     public String getName() {
@@ -47,4 +49,17 @@ public class Sport {
 
     @JSONField(name = "user_id")
     int user_id;
+
+
+
+    @JSONField(name = "last_changed")
+    Timestamp last_changed;
+
+    public Timestamp getLast_changed() {
+        return last_changed;
+    }
+
+    public void setLast_changed(Timestamp last_changed) {
+        this.last_changed = last_changed;
+    }
 }
