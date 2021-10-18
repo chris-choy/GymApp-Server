@@ -15,6 +15,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.codec.json.Jackson2JsonDecoder;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.List;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = GymApplication.class)
 public class PlanDaoTest {
@@ -27,6 +29,12 @@ public class PlanDaoTest {
         System.out.println(planDao);
     }
 
+    @Test
+    public void testFindAllPlan(){
+        List<Plan> plans = planDao.getAllPlansComplete(4);
+
+        System.out.println("a");
+    }
 
     @Test
     public void testFindPlan(){

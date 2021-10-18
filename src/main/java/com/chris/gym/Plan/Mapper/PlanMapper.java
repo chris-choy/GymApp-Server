@@ -174,4 +174,9 @@ public interface PlanMapper {
             "plan_section_id = #{id}")
     public void deletePlanSection(@Param("id") int id);
 
+    @Delete("delete from t_plan where " +
+            "id = #{id} or " +
+            "plan_id = #{id}")
+    public void deletePlan(@Param("id") int id);
+
 }

@@ -30,13 +30,18 @@ public interface SportMapper {
     public Sport findSportById(@Param("id") int id);
 
     @Insert("INSERT INTO t_sport(name,unit,user_id) values(#{name},#{unit},#{user_id})")
-    public int insert(@Param("name") String name,
+    public void insert(@Param("name") String name,
                       @Param("unit") String unit,
                       @Param("user_id") int user_id);
 
     @Select("SELECT * FROM t_sport WHERE user_id = #{user_id} and name = #{name} ")
     public Sport findSportByName(@Param("user_id") int user_id,
                                       @Param("name") String name);
+
+    @Update("UPDATE t_sport SET name = #{name} , unit = #{unit} WHERE id = #{id}")
+    public void updateSportById(@Param("id") int id,
+                                @Param("name") String name,
+                                @Param("unit") String unit);
 
 
 

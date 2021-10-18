@@ -22,4 +22,12 @@ public class SportDao {
 
         return sports;
     }
+
+    public void createSport(String name, String unit, int user_id){
+        sportMapper.insert(name,unit,user_id);
+    }
+
+    public void updateSport(int id,String name, String unit){
+        sportMapper.updateSportById(id,name,unit);
+    }
 }

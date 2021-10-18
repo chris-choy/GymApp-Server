@@ -399,6 +399,13 @@ public class PlanRestController {
 //        return new ResponseEntity<String>("OK", HttpStatus.OK);
     }
 
+    @PostMapping("/delete")
+    public ResponseEntity<String> deletePlan(@RequestBody int plan_id){
+        planDao.deletePlan(plan_id);
+        return new ResponseEntity<>("", HttpStatus.OK);
+    }
+
+
     // PlanRow 操作
 //    @GetMapping("/plan/row/create")
 //    public ResponseEntity<String> createRow(@RequestBody String body){

@@ -16,6 +16,8 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
+import java.sql.SQLException;
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.List;
 
 @RestController
@@ -63,40 +65,41 @@ public class SportRestController {
     }
 
     @PostMapping("/create")
-    public ResponseEntity<String> createSport(@RequestBody String body){
+    public ResponseEntity<String> createSport(@RequestBody Sport sport){
 
         // 获取user_id
         User user = getUser();
         if(user == null){
-            return new ResponseEntity<String>("Missing user details.", HttpStatus.BAD_REQUEST);
-        }
-
-        JSONObject bodyJsonObject = JSONObject.parseObject(body);
-        if(bodyJsonObject == null){
-            return new ResponseEntity<String>("Body data can't be parsed to json.", HttpStatus.BAD_REQUEST);
-        }
-        String name = "";
-        int user_id = user.getId();
-
-        // 解析body数据，获取需要创建的 sport信息。
-        String unit = "";
-        try {
-            name = bodyJsonObject.getString("name");
-            unit = bodyJsonObject.getString("unit");
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-            return new ResponseEntity<String>("Missing sport details.", HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>("Error: User was not found.", HttpStatus.BAD_REQUEST);
         }
 
         // 创建sport。
         try {
-            sportMapper.insert(name,unit,user_id);
+            sportDao.createSport(sport.getName(), sport.getUnit(), user.getId());
+            return new ResponseEntity<>("OK", HttpStatus.OK);
         } catch (Exception e) {
             System.out.println(e.getMessage());
-            return new ResponseEntity<String>("Failed to create sport.", HttpStatus.BAD_REQUEST);
-        };
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
+    }
 
-        return new ResponseEntity<String>("ok", HttpStatus.OK);
+    @PostMapping("/update")
+    public ResponseEntity<String> updateSport(@RequestBody Sport sport){
+
+        // 获取user_id
+        User user = getUser();
+        if(user == null){
+            return new ResponseEntity<>("Error: User was not found.", HttpStatus.BAD_REQUEST);
+        }
+
+        // 创建sport。
+        try {
+            sportDao.updateSport(sport.getId(), sport.getName(), sport.getUnit());
+            return new ResponseEntity<>("OK", HttpStatus.OK);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
     }
 
     @GetMapping("/all")

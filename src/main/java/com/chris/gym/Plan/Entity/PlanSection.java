@@ -17,6 +17,9 @@ public class PlanSection implements Comparable<PlanSection> {
         plan_id = planSQLModel.plan_id;
         last_changed = planSQLModel.last_changed;
         // missing sport.
+        sport = new Sport();
+        sport.setId(planSQLModel.getSport_id());
+        sport.setUser_id(planSQLModel.getUser_id());
         // missing rowList.
     }
 

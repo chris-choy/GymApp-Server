@@ -4,6 +4,7 @@ package com.chris.gym.MapperTest;
 import com.alibaba.fastjson.JSON;
 import com.chris.gym.Plan.Entity.Plan;
 import com.chris.gym.Plan.Entity.PlanSQLModel;
+import com.chris.gym.Plan.Entity.PlanSection;
 import com.chris.gym.Plan.Mapper.PlanMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -34,6 +35,15 @@ public class PlanMapperTest {
 
 
         System.out.println(JSON.toJSONString(plan));
+    }
+
+    @Test
+    public void testFindPlanSection(){
+        PlanSQLModel plan = planMapper.findPlanSection(81,0);
+
+        PlanSection section = new PlanSection(plan);
+
+        System.out.println(JSON.toJSONString(section));
     }
 
 }
