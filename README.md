@@ -1,5 +1,5 @@
-<div style="text-align:center">
- <img src="https://user-images.githubusercontent.com/23289235/150629755-886d56e3-b459-41b7-be2a-aa945e34e6e0.png" height = "100" alt="图片名称" />
+<div align="center">
+ <img src="https://user-images.githubusercontent.com/23289235/150794034-37a77fec-0a5d-4289-8d14-e844bccf465e.png" height = "150" alt="图片名称" />
 </div>
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
