@@ -4,7 +4,7 @@
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
-## 1.背景介绍aaa
+## 1.背景介绍
 此项目基于Spring Boot和MySQL创建，作为iOS的GymAPP项目后端应用，提供查询数据存储数据、以及基本的用户安全保障。
 
 ## 2.特点
