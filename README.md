@@ -1,10 +1,10 @@
 <div style="text-align:center">
- <img src="https://user-images.githubusercontent.com/23289235/150629755-886d56e3-b459-41b7-be2a-aa945e34e6e0.png" height = "150" alt="图片名称" />
+ <img src="https://user-images.githubusercontent.com/23289235/150629755-886d56e3-b459-41b7-be2a-aa945e34e6e0.png" height = "100" alt="图片名称" />
 </div>
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
-## 1.背景介绍
+## 1.背景介绍aaa
 此项目基于Spring Boot和MySQL创建，作为iOS的GymAPP项目后端应用，提供查询数据存储数据、以及基本的用户安全保障。
 
 ## 2.特点
