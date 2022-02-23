@@ -4,6 +4,8 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+.DS_Store
+
 ### STS ###
 .apt_generated
 .classpath
@@ -13,11 +15,17 @@ target/
 .springBeans
 .sts4-cache
 
+### mvnw ###
+mvnw
+mvnw.cmd
+.mvn
+
 ### IntelliJ IDEA ###
 .idea
 *.iws
 *.iml
 *.ipr
+
 
 ### NetBeans ###
 /nbproject/private/
@@ -32,3 +40,4 @@ build/
 ### VS Code ###
 .vscode/
 /src/test/
+/logs/

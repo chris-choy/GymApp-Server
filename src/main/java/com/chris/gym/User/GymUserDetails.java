@@ -7,7 +7,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 import java.util.List;
 
-public class UserDao implements UserDetails {
+public class GymUserDetails implements UserDetails {
 
     @JSONField(name = "id")
     private int id;
@@ -24,7 +24,7 @@ public class UserDao implements UserDetails {
     @JSONField(name = "authority")
     private List<GrantedAuthority> authorities;
 
-    public UserDao(String username, String password, List<GrantedAuthority> authorities) {
+    public GymUserDetails(String username, String password, List<GrantedAuthority> authorities) {
         this.username = username;
         this.password = password;
         this.authorities = authorities;

@@ -27,8 +27,6 @@ public class AuthenticationRestController {
                                         AuthenticationManagerBuilder authenticationManagerBuilder) {
         this.tokenProvider = tokenProvider;
         this.authenticationManagerBuilder = authenticationManagerBuilder;
-
-
     }
 
     @PostMapping("/login")
@@ -55,7 +53,6 @@ public class AuthenticationRestController {
 
         // 创建token
         String jwt = tokenProvider.createToken(authentication, false);
-
 
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.add(JWTFilter.AUTHORIZATION_HEADER, "Bearer " + jwt);
