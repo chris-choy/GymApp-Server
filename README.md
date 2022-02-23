@@ -3,6 +3,7 @@
 </div>
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/chris-choy/GymApp-Server?include_prereleases)
 
 ## 1.背景介绍
 此项目基于Spring Boot和MySQL创建，作为iOS的GymAPP项目后端应用，提供查询数据存储数据、以及基本的用户安全保障。
@@ -48,7 +49,14 @@ spring.datasource.password = [密码]
 
 ## 5.使用方法
 ### 5.1 运行
-配置好运行环境之后，直接运行即可访问。
+1. 方式一：IDE运行
+
+    配置好运行环境之后，直接idea中运行即可。
+
+2. 方式二：JAR运行
+
+       java -jar gym-v0.2.0-beta
+    
 ### 5.2 查看Api文档（Swagger）
 根据运行程序的主机ip地址访问，默认为loacalhost，端口后8080。
 
